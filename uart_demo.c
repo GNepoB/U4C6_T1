@@ -410,18 +410,6 @@ int main() {
     bool cor = true;
 
     while (1) {
-        // if(gpio_get(botao_A) == 0){
-        //     sleep_ms(100);
-        //     gpio_put(LED_verde, !gpio_get(LED_verde));
-        //     uart_puts(UART_ID, " Mudança de estado do LED verde\r\n");
-        // }
-
-        // if(gpio_get(botao_B) == 0){
-        //     sleep_ms(100);
-        //     gpio_put(LED_azul, !gpio_get(LED_azul));
-        //     uart_puts(UART_ID, " Mudança de estado do LED azul\r\n");
-        // }
-
         if (uart_is_readable(UART_ID)) {
             // Lê um caractere da UART
             char c = uart_getc(UART_ID);
