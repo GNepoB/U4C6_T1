@@ -327,30 +327,6 @@ void set_num_9(uint8_t r, uint8_t g, uint8_t b)
         }
     }
 }
-
-
-void exibe0(){
-    for (int i = 0; i < NUM_PIXELS; i++)
-    {
-       
-        if (i % 2 == 0)
-        {
-            uart_puts(UART_ID, "Par\r\n");
-        }
-        else
-        {
-            uart_puts(UART_ID, "Impar\r\n");
-        }
-    }
-}
-
-void exibe1(){
-    for(int i = 0; i<NUM_PIXELS; i++){
-        uart_puts(UART_ID, " Teste 1\r\n");
-    }
-}
-
-
 int main() {
     // Inicializa a biblioteca padrão
     stdio_init_all();
